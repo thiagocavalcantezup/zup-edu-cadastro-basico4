@@ -1,5 +1,6 @@
 package br.com.zup.handora.cadastrobasico4.models;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
@@ -13,6 +14,7 @@ public class AutorDTO {
 
     @NotBlank
     @Size(max = 120)
+    @Email
     private String email;
 
     @NotBlank

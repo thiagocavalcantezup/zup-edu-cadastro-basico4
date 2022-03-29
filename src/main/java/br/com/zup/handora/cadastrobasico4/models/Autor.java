@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
 
 import org.hibernate.validator.constraints.br.CPF;
 
@@ -21,6 +22,7 @@ public class Autor {
     private String nome;
 
     @Column(nullable = false, length = 120)
+    @Email
     private String email;
 
     @Column(nullable = false, length = 2500)

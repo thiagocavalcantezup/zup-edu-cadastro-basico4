@@ -7,12 +7,12 @@ import org.springframework.validation.FieldError;
 
 public class ErroPadronizado {
 
-    private String codigoHttp;
+    private Integer codigoHttp;
     private String mensagemHttp;
     private String mensagemGeral;
     private List<String> mensagens;
 
-    public ErroPadronizado(String codigoHttp, String mensagemHttp, String mensagemGeral) {
+    public ErroPadronizado(Integer codigoHttp, String mensagemHttp, String mensagemGeral) {
         this.codigoHttp = codigoHttp;
         this.mensagemHttp = mensagemHttp;
         this.mensagemGeral = mensagemGeral;
@@ -27,7 +27,7 @@ public class ErroPadronizado {
         mensagens.add(error);
     }
 
-    public String getCodigoHttp() {
+    public Integer getCodigoHttp() {
         return codigoHttp;
     }
 
